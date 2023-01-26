@@ -1,28 +1,28 @@
 {
-    "products": [
-      {        
-     "id": 1,
-      "productName": "Men's Casual Solid Lycra Shirt",
-      "categoryId": 2,
-      "description": "Latest Men's Half Sleeves Shirt",
-      "price": "1000",
-      "is_available": true,
-      "productImg": "https://i.postimg.cc/vHj6n8jy/shirt1.jpg",
+  "products": [
+    {
+      "id": 1,
+      "productName": "Shirt",
+      "categoryId": "2",
+      "description": "Latest Men's Half Sleeves Shirt , Black colour , ",
+      "price": "500",
+      "is_available": "yes",
+      "productImg": "https://i.postimg.cc/MGMWkJyY/shirt1.jpg",
       "rating": 4.4,
       "review": 150,
       "vendor_name": "Malabar Textiles",
       "warranty": 1
-     },
-     {
+    },
+    {
       "id": "2",
-      "productName": "Men's Formals Shirt",
+      "productName": "frok",
       "categoryId": "2",
-      "description": "L Half Sleeves Shirt",
-      "price": "700",
+      "description": "printed top , full sleev",
+      "price": "1000",
       "is_available": "yes",
-      "productImg": "https://i.postimg.cc/Yq1hvN16/shirt2.jpg",
+      "productImg": "https://i.postimg.cc/Xqrm06q3/frok.jpg",
       "rating": "4.7",
-      "review": "250",
+      "review": "2.5k",
       "vendor_name": "Malabar texstyle",
       "warranty": 2
     },
@@ -67,12 +67,12 @@
     },
     {
       "id": 6,
-      "productName": "Kids Dress",
+      "productName": "frok",
       "categoryId": "2",
       "description": "girl Dress",
       "price": "900",
-      "is_available": true,
-      "productImg": "https://i.postimg.cc/GmLh9W3R/k1.jpg",
+      "is_available": "yes",
+      "productImg": "https://i.postimg.cc/pd8gYWf3/frok2.jpg",
       "rating": 4.8,
       "review": 430,
       "vendor_name": "Mumbai Textiles",
@@ -92,25 +92,12 @@
       "warranty": 1
     },
     {
-      "id": 8,
-      "productName": "Women Dress",
-      "categoryId": "2",
-      "description": "girl Dress",
-      "price": 900,
-      "is_available": true,
-      "productImg": "https://i.postimg.cc/hG7FGsmg/w2.jpg",
-      "rating": 4.8,
-      "review": 530,
-      "vendor_name": "Munni Textiles",
-      "warranty": 1
-    },
-    {
       "id": "9",
       "productName": "Laptop",
       "categoryId": "1",
       "description": "Latest Core Processor",
       "price": "45000",
-      "is_available": "yes",
+      "is_available": true,
       "productImg": "https://i.postimg.cc/XJwTfvxz/l1.jpg",
       "rating": "4",
       "review": "70",
@@ -123,13 +110,38 @@
       "categoryId": "3",
       "description": "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel",
       "price": "500",
-      "is_available": "yes",
+      "is_available": true,
       "productImg": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
       "rating": "3.5",
       "review": "200",
       "vendor_name": "Malabar Jwellers",
       "warranty": 1
+    },
+    {
+      "id": "12",
+      "productName": "Women Shirt",
+      "categoryId": "2",
+      "description": "Women Shirt  ,  Full-Sleeve ,  grape colour",
+      "price": "550",
+      "is_available": "true",
+      "productImg": "https://i.postimg.cc/JhHyPfSn/shirt-women.jpg",
+      "rating": "4.3",
+      "review": "6.6",
+      "vendor_name": "Alen Only",
+      "warranty": "1"
+    },
+    {
+      "id": "11",
+      "productName": "acer laptop",
+      "categoryId": "1",
+      "description": "intel celeron N2940 proccessor",
+      "price": "50000",
+      "is_available": "yes",
+      "productImg": "https://i.postimg.cc/65N6RDJ7/acer1.jpg",
+      "rating": "2",
+      "review": "5",
+      "vendor_name": "Acer pvt lmt",
+      "warranty": "2"
     }
-
-    ]
-  }
+  ]
+}

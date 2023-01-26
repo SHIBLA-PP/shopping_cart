@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from 'src/app/products/product.service';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  
+
+  constructor(private productService:ProductService) { }
 
   ngOnInit(): void {
+  }
+
+  search(event:any){
+    
+    var searchTerm = event.target.value
+    this.productService.search.next(searchTerm)
+    
   }
 
 }

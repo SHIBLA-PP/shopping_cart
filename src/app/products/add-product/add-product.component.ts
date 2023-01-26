@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
+import { Router } from '@angular/router';
+import { ProductService } from '../product.service';
 
 @Component({
   selector: 'app-add-product',
@@ -7,9 +10,45 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddProductComponent implements OnInit {
 
-  constructor() { }
+  //Form Group
+  addProductForm=this.formBuilder.group({
+      id: [''],
+      productName: [''],
+      categoryId: [''],
+      description: [''],
+      price: [''],
+      is_available: [''],
+      productImg: [''],
+      rating: [''],
+      review: [''],
+      vendor_name: [''],
+      warranty: ['']
+  })
+
+  constructor(private formBuilder:FormBuilder,private productService:ProductService,private router:Router) { }
 
   ngOnInit(): void {
   }
+
+ addProduct()
+ {
+  var newProduct={
+    id: this.addProductForm.value.id,
+    productName: this.addProductForm.value.productName,
+    categoryId: this.addProductForm.value.categoryId,
+    description: this.addProductForm.value.description,
+    price: this.addProductForm.value.price,
+    is_available: this.addProductForm.value.is_available,
+    productImg: this.addProductForm.value.productImg,
+    rating: this.addProductForm.value.rating,
+    review: this.addProductForm.value.review,
+    vendor_name: this.addProductForm.value.vendor_name,
+    warranty: this.addProductForm.value.warranty
+  }
+  this.productService.addProduct(newProduct).subscribe((data)=>{
+    alert('New Product added successfully')
+    this.router.navigateByUrl('products')
+  })
+ }
 
 }

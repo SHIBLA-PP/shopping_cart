@@ -8,20 +8,35 @@ import { ProductService } from '../product.service';
 })
 export class ViewAalProductComponent implements OnInit {
 
-  productList:any
-
+  productList:any;
+  categorylist:any;
+  searchItem:any;
   constructor(private productService:ProductService) {
    }
 
   ngOnInit(): void {
     this.productService.viewAllProducts().subscribe((data)=>{
       this.productList=data
-      console.log(this.productList);
-      
+    })
+
+    this.productService.search.subscribe((term)=>{
+      this.searchItem = term
     })
 
   }
+  
+  categorySearch(category:any)
+  {
+   this.categorylist=this.productList.filter((item:any)=>{
+      if(category==''|| category == item.categoryId)
+      {
+        return item
+      }
+      
+    })
 
-
+    console.log(this.categorylist);
+    
+  }
 
 }

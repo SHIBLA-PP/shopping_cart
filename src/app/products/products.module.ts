@@ -8,6 +8,8 @@ import { UpdateProductComponent } from './update-product/update-product.componen
 import { DeleteProductComponent } from './delete-product/delete-product.component';
 import { ViewProductComponent } from './view-product/view-product.component';
 import { ViewAalProductComponent } from './view-aal-product/view-aal-product.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SearchFilterPipe } from './sharedpipe/search-filter.pipe';
 
 
 @NgModule({
@@ -17,11 +19,14 @@ import { ViewAalProductComponent } from './view-aal-product/view-aal-product.com
     UpdateProductComponent,
     DeleteProductComponent,
     ViewProductComponent,
-    ViewAalProductComponent
+    ViewAalProductComponent,
+    SearchFilterPipe
   ],
   imports: [
     CommonModule,
-    ProductsRoutingModule
+    ProductsRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class ProductsModule { }
